@@ -27,7 +27,7 @@ const actions = {
   },
   // remove cart item
   removeCartItem({ commit }, cartItem) {
-    axios.delete("/api/cart/delete", cartItem).then((response) => {
+    axios.delete(`/api/cart/delete/${cartItem.id}`).then((response) => {
       commit("UPDATE_CART_ITEMS", response.data);
     });
   },

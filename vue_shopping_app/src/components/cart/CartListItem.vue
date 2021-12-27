@@ -11,11 +11,12 @@
           <i
             class="fa fa-arrow-circle-up cart-item__modify"
             @click="addCartItem(cartItem)"
-          ></i>
+          >ADD</i>
+          <button class="delete" @click="removeCartItem(cartItem)"></button>
           <i
-            class="fa fa-arrow-circle-down cart-item__modify"
+            class="fa fa-home cart-item__modify"
             @click="removeCartItem(cartItem)"
-          ></i>
+          >DELETE</i>
         </span>
       </div>
     </div>
